@@ -11,6 +11,4 @@ export class OpenPages {
   get LoginPage() {
     return new LoginPage(this.page);
   }
-
-
 }
