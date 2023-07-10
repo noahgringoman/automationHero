@@ -33,8 +33,14 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'automated-ui-tests',
+      testDir: './projects/automated-ui-tests/tests/',
+      use: {
+        baseURL: `https://${process.env.TEST_Site_1}/`,
+        headless: false,
+        browserName: 'chromium',
+        testIdAttribute: 'data-test',     
+      },
     },
 
     {
