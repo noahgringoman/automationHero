@@ -9,7 +9,6 @@ export class LoginPage {
 
   // Get Elmenets
 
-
   // Id
 
   swagUsernameId() {
@@ -34,12 +33,12 @@ export class LoginPage {
     return this.page.getByRole("textbox", { name: "text" });
   }
 
-  swagPassword(){
-    return this.page.getByTestId('password')
-
+  swagPassword() {
+    return this.page.getByTestId("password");
   }
 
-  
-
-
+  async swagLabsLogin(user: any) {
+    await this.swagUsername().fill(user.swagUser);
+    await this.swagPassword().fill(user.swagPassword);
+  }
 }
