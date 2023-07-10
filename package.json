@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/noahgringoman/automationHero/issues"
   },
-  "homepage": "https://github.com/noahgringoman/automationHero#readme"
+  "homepage": "https://github.com/noahgringoman/automationHero#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1"
+  }
 }
