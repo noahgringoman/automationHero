@@ -1,0 +1,19 @@
+{
+  "name": "automationhero",
+  "version": "1.0.0",
+  "description": "Use for automation repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_automationHero"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahgringoman/automationHero.git"
+  },
+  "author": "Noah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahgringoman/automationHero/issues"
+  },
+  "homepage": "https://github.com/noahgringoman/automationHero#readme"
+}
