@@ -8,8 +8,8 @@ export class OpenPages {
     this.page = page;
   }
 
-  get LoginPage(){
-    return new this.LoginPage(this.page);
+  get LoginPage() {
+    return new LoginPage(this.page);
   }
 
 
