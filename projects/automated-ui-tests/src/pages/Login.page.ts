@@ -9,6 +9,7 @@ export class LoginPage {
 
   // Get Elmenets
 
+
   // Id
 
   swagUsernameId() {
@@ -33,7 +34,12 @@ export class LoginPage {
     return this.page.getByRole("textbox", { name: "text" });
   }
 
-  swagPassword() {
-    return this.page.getByTestId("password");
+  swagPassword(){
+    return this.page.getByTestId('password')
+
   }
+
+  
+
+
 }
