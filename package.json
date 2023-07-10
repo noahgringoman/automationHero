@@ -4,7 +4,8 @@
   "description": "Use for automation repo",
   "main": "index.js",
   "scripts": {
-    "test": "test_automationHero"
+    "test": "test_automationHero",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,12 @@
   "homepage": "https://github.com/noahgringoman/automationHero#readme",
   "devDependencies": {
     "@playwright/test": "^1.35.1",
-    "prettier": "3.0.0"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "3.0.0",
+    "pretty-quick": "^3.1.3"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
