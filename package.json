@@ -27,5 +27,8 @@
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }
