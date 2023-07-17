@@ -37,8 +37,13 @@ export class LoginPage {
     return this.page.getByTestId("password");
   }
 
+  loginButton() {
+    return this.page.getByTestId("login-button");
+  }
+
   async swagLabsLogin(user: any) {
     await this.swagUsername().fill(user.swagUser);
     await this.swagPassword().fill(user.swagPassword);
+    await this.loginButton().click();
   }
 }

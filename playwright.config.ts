@@ -27,6 +27,7 @@ export default defineConfig({
     baseURL: `https://${process.env.TEST_Site_1}/`,
     headless: false,
     browserName: "chromium",
+    testIdAttribute: "data-test",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
